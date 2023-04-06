@@ -52,3 +52,35 @@
 .animation2{
   width: 600px;
 }
+
+.animate4{
+  width: 600px;
+  border: 10px solid black;
+
+ 
+  
+} 
+.animate3{
+  background-color: pink;
+  border: 5px black;
+
+ 
+
+} 
+
+.cart{
+  height: 370px;
+}
+
+.photo{
+max-height: 20px;
+  
+
+}
+
+/* @keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+} */

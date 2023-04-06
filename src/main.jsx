@@ -11,6 +11,7 @@ import About from './componenet/about/About'
 import Header from './componenet/header/Header'
 import Books from './componenet/books/Books'
 import Log from './componenet/login/Log'
+import Indivi from './componenet/about/Indivi'
 
 const router=createBrowserRouter([
   {path:'/',
@@ -21,10 +22,11 @@ children:[
     path:'/',
     element:<Home/>
   },
+  
   {
     path:'/about',
     element:<About/>,
-    loader:()=>fetch('https://openapi.programming-hero.com/api/ai/tools')
+    loader:()=>fetch('https://dummyjson.com/products')
   },
   {
     path:'/books',
@@ -38,8 +40,14 @@ children:[
   {
     path:'/log',
     element:<Log/>
+  },
+  {
+    path:'indivi/:id',
+    element:<Indivi/>,
+    loader: ({params})=>fetch(`https://dummyjson.com/products/${index}`) 
+   
   }
-
+  
 
 
 ]}
