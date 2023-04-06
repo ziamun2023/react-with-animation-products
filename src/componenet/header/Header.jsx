@@ -17,17 +17,17 @@ const Header = () => {
             </Link> 
   
 
-         <ul className='item-center hidden space-x-8 lg:flex text-lg font-medium'>
-                <li>
+         <ul className='item-center hidden space-x-8 lg:flex text-lg font-medium '>
+                <li className='hover:text-xl hover:bg-white rounded-md p-3 duration-200'>
                     <NavLink to='/' className={({isActive})=> isActive? 'text-blue-600': 'default' }> home</NavLink>
                 </li>
-                <li>
+                <li className='hover:text-xl hover:bg-white rounded-md p-3 duration-200'>
                     <NavLink to='/about' className={({isActive})=> isActive? 'text-blue-600': 'default' }> All products </NavLink>
                 </li>
-                <li>
+                <li className='hover:text-xl hover:bg-white rounded-md p-3 duration-200'>
                     <NavLink to='/books' className={({isActive})=> isActive? 'text-blue-600': 'default' }> Customer care</NavLink>
                 </li>
-                <li>
+                <li className='hover:text-xl hover:bg-white rounded-md p-3 duration-200'>
                     <NavLink to='/log' className={({isActive})=> isActive? 'text-blue-600': 'default' }> Log in</NavLink>
                 </li>
                 </ul>

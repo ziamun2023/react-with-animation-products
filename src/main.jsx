@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 
 
+
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './componenet/home/Home'
@@ -22,11 +23,13 @@ children:[
   },
   {
     path:'/about',
-    element:<About/>
+    element:<About/>,
+    loader:()=>fetch('https://openapi.programming-hero.com/api/ai/tools')
   },
   {
     path:'/books',
-    element:<Books/>
+    element:<Books/>,
+ 
   },
   {
     path:'/header',
