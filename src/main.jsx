@@ -13,6 +13,7 @@ import Books from './componenet/books/Books'
 import Log from './componenet/login/Log'
 import Indivi from './componenet/about/Indivi'
 import Company from './componenet/aboutcompany/Company'
+import Searchfound from './componenet/searchResult/Searchfound'
 
 const router=createBrowserRouter([
   {path:'/',
@@ -55,7 +56,16 @@ children:[
   {
     path:'*',
     element:<div className='text-center absolute left-72 text-7xl'>error 404</div>
+  },
+  {
+    path: '/search',
+    element:<Searchfound/>
   }
+  // {
+  //   path:"search/:productname",
+  //   element:<Searchfound/>,
+  //   loader:({params})=>fetch(`https://dummyjson.com/products/search?q=${params.productname}`)
+  // }
   
 
 

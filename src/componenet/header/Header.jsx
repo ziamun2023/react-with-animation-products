@@ -5,6 +5,24 @@ import { NavLink } from 'react-router-dom';
 
 import { BoltIcon,Bars3Icon,XMarkIcon } from '@heroicons/react/24/solid'  
 const Header = () => {
+
+ 
+//   const changing=(event)=>{
+//   const theInput=event.target.value
+  
+//   searchforproducts(theInput)
+
+//   }
+//   const searchforproducts=(theInput,event)=>{
+// return theInput
+//   }
+
+//   {
+   
+//   }
+
+
+
     const [IsMenuOpen,setIsMenuOpen]=useState(false)
     return (
      <div className='bg-gray-100 px-4 py-5 mx-auto md:px-24 lg:px-8   '  >
@@ -18,6 +36,10 @@ const Header = () => {
   
 
          <ul className='item-center hidden space-x-8 lg:flex text-lg font-medium '>
+         <li  className='hover:text-xl hover:bg-white rounded-md p-3 duration-200'>
+          {/* <input onChange={changing} type="text" /> <Link to={`search/:${params.description}`}><button onClick={searchforproducts}> search</button></Link> */}
+                    {/* <NavLink to='/' className={({isActive})=> isActive? 'text-blue-600': 'default' }> home</NavLink> */}
+                </li>
                 <li className='hover:text-xl hover:bg-white rounded-md p-3 duration-200'>
                     <NavLink to='/' className={({isActive})=> isActive? 'text-blue-600': 'default' }> home</NavLink>
                 </li>
