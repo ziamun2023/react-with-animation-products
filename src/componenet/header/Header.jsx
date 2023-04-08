@@ -7,8 +7,8 @@ import { BoltIcon,Bars3Icon,XMarkIcon } from '@heroicons/react/24/solid'
 const Header = () => {
     const [IsMenuOpen,setIsMenuOpen]=useState(false)
     return (
-     <div className='bg-gray-100 px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'  >
-           <div className='relative flex space-x-6 m-4 pr-8 justify-between '>
+     <div className='bg-gray-100 px-4 py-5 mx-auto md:px-24 lg:px-8   '  >
+           <div className='relative flex space-x-6 m-4 pr-8 justify-between'>
         
         <Link to ='/' className='flex'>
           <BoltIcon className="h-6 w-6 text-blue-500" />
@@ -26,6 +26,9 @@ const Header = () => {
                 </li>
                 <li className='hover:text-xl hover:bg-white rounded-md p-3 duration-200'>
                     <NavLink to='/books' className={({isActive})=> isActive? 'text-blue-600': 'default' }> Customer care</NavLink>
+                </li>
+                <li className='hover:text-xl hover:bg-white rounded-md p-3 duration-200'>
+                    <NavLink to='/aboutcompany' className={({isActive})=> isActive? 'text-blue-600': 'default' }> About us</NavLink>
                 </li>
                 <li className='hover:text-xl hover:bg-white rounded-md p-3 duration-200'>
                     <NavLink to='/log' className={({isActive})=> isActive? 'text-blue-600': 'default' }> Log in</NavLink>
@@ -98,3 +101,5 @@ const Header = () => {
 };
 
 export default Header;
+
+// sm:max-w-xl md:max-w-full lg:max-w-screen-xl 

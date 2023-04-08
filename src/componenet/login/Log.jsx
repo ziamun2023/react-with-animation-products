@@ -4,17 +4,22 @@ import groovyWalkAnimation from "../../assets/68312-login.json";
 
 const Log = () => {
     return (
-        <div className='flex'>
-        <div  className='mt-20'>
-     <p className='text-8xl text-left '>Shop your <span className='text-blue-400'>needs</span></p>
-     <p className='text-left pt-7'>If certainty is a core need for you, then Shopsense can meet that need perfectly Shopping is always there – there are always Shopsense to be shopped at. There’s never any concern that the shops won’t be there, or won’t be open, or won’t want to take your trade.</p>
+        <div className='grid lg:grid-cols-2 mx-16'>
+        <div  className='mt-20 bg-blue-50 rounded-lg'>
+     <p className='text-6xl text-center '>Login</p>
+     <p className='text-left pt-7 text-center'><input className='bg-white text-4xl p-2 rounded-lg' type="text" placeholder='Username' /></p>
+     <p className='text-left pt-7 text-center'><input className='bg-white text-4xl p-2 rounded-lg' type="text" placeholder='Password' /></p>
+     <div>
+        <button className='bg-green-200 mt-8 text-3xl p-2 rounded-lg'>Log in </button> 
+     </div>
+     <p className=' hover:text-blue-700 text-2xl mt-3'> sign up </p>
   
         </div>
         <div className='animate3'>
-        <div className='animate4' >
-         <Lottie className='animation' animationData={groovyWalkAnimation} loop={true} />;
+      
+         <Lottie  animationData={groovyWalkAnimation} loop={true} />;
         
-        </div>
+       
         </div>
      
         </div>

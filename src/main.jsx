@@ -12,6 +12,7 @@ import Header from './componenet/header/Header'
 import Books from './componenet/books/Books'
 import Log from './componenet/login/Log'
 import Indivi from './componenet/about/Indivi'
+import Company from './componenet/aboutcompany/Company'
 
 const router=createBrowserRouter([
   {path:'/',
@@ -44,8 +45,16 @@ children:[
   {
     path:'indivi/:id',
     element:<Indivi/>,
-    loader: ({params})=>fetch(`https://dummyjson.com/products/${index}`) 
+    loader: ({params})=>fetch(`https://dummyjson.com/products/${params.id}`) 
    
+  },
+  {
+    path:'/aboutcompany',
+    element:<Company/>
+  },
+  {
+    path:'*',
+    element:<div className='text-center absolute left-72 text-7xl'>error 404</div>
   }
   
 
